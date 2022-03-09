@@ -1,0 +1,20 @@
+---
+import NewsStandComponent from './newsstand.tsx'
+import { DateTime } from 'luxon'
+
+const posts = await Astro.fetchContent('../../pages/posts/*.md')
+const notes = await Astro.fetchContent('../../pages/notes/*.md')
+---
+<section class="newsstand">
+    <h2 class="title">Blog Posts</h2>
+    <NewsStandComponent posts={posts.sort((a, b) => DateTime.fromISO(b.date).toMillis() - DateTime.fromISO(a.date).toMillis()).slice(0, 5)} client:visible />
+</section>
+
+<style>
+    .newsstand {
+        @apply max-w-screen-md mx-auto flex flex-col gap-8 py-4;
+    }
+    .title {
+        @apply font-extrabold text-4xl;
+    }
+</style>

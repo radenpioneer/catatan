@@ -1,17 +1,17 @@
 ---
 import BaseLayout from './base.astro'
 import { DateTime } from 'luxon'
-const { title, subtitle, date } = Astro.props
+const { content } = Astro.props
 ---
-<BaseLayout title={title}>
+<BaseLayout title={content.title}>
     <article class="article">
         <header class="article__header">
-            {subtitle ? (
-                <div class="article__subtitle">{subtitle}</div>
+            {content.description ? (
+                <div class="article__subtitle">{content.description}</div>
             ) : null}
-            <h1 class="article__title">{title}</h1>
+            <h1 class="article__title">{content.title}</h1>
             <p class="article__date">
-                <time datetime={date}>{DateTime.fromISO(date).setLocale('id').toLocaleString(DateTime.DATE_FULL)}</time>
+                <time datetime={content.date}>{DateTime.fromISO(content.date).setLocale('id').toLocaleString(DateTime.DATE_FULL)}</time>
             </p>
         </header>
         <main class="article__content">
