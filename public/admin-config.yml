@@ -38,3 +38,28 @@ collections:
       - label: Body
         name: body
         widget: markdown
+  - name: "notes"
+    label: "(Weak) Notes"
+    folder: "src/pages/notes"
+    create: true
+    editor:
+      preview: false
+    slug: "{{slug}}"
+    fields:
+      - label: Layout
+        name: layout
+        widget: hidden
+        default: "../../layouts/pages.astro"
+      - label: Title
+        name: title
+        widget: string
+      - label: Publish Date
+        name: date
+        widget: datetime
+      - label: Image
+        name: image
+        widget: image
+        required: false
+      - label: Body
+        name: body
+        widget: markdown

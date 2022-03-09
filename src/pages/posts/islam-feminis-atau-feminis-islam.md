@@ -1,9 +1,10 @@
 ---
+layout: ../../layouts/pages.astro
 title: Islam Feminis, atau Feminis Islam?
-description: Sebuah Catatan Diskusi
 date: 2021-03-09
-tags:
-  - blog
+draft: true
+description: Sebuah Catatan Diskusi
+tags: []
 ---
 Saya mengambil hematnya saja: sejak awal, karena feminisme berbasis dari materialisme, yang melihat perempuan dari sudut pandang materi, sehingga Islam yang tidak meletakkan materi sebagai sudut pandang utama, melainkan keimanan dan ketauhidan, tidak bisa dikatakan kompatibel dengan feminisme meski ada satu dua pandangan yang seolah bertemu.
 

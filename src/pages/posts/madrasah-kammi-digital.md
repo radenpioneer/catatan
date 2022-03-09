@@ -1,4 +1,6 @@
 ---
+layout: "../../layouts/pages.astro"
+draft: true
 title: Madrasah KAMMI Digital
 description: Pengembangan Esai DPMK Tasikmalaya 2017
 date: 2020-04-07

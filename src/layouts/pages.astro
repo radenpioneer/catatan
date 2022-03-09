@@ -6,6 +6,11 @@ const { content } = Astro.props
 <BaseLayout title={content.title}>
     <article class="article">
         <header class="article__header">
+            {content.image ? (
+                <div class="article__image">
+                    <img src={content.image} width={400} height={300} alt={content.title}>
+                </div>
+            ) : null}
             {content.description ? (
                 <div class="article__subtitle">{content.description}</div>
             ) : null}
@@ -35,6 +40,11 @@ const { content } = Astro.props
         }
         .article__date {
             @apply text-lg text-center text-secondary;
+        }
+        .article__image {
+            img {
+                @apply w-full object-cover object-center rounded-xl;
+            }
         }
     }
 

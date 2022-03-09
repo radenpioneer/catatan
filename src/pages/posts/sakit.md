@@ -1,4 +1,6 @@
 ---
+layout: "../../layouts/pages.astro"
+draft: true
 title: Sakit
 date: 2015-06-16
 tags:

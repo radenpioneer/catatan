@@ -1,9 +1,10 @@
 ---
+layout: ../../layouts/pages.astro
 title: 2020, Mari Bicara Kontribusi
 date: 2019-12-31
-tags:
-  - blog
-image: /assets/img/uploads/2020-mari-bicara-kontribusi.jpg
+image: ""
+tags: []
+draft: true
 ---
 Sebuah kesyukuran, karena pada tahun ini KAMMI Kalimantan Tengah dalam beberapa waktu terakhir sudah melahirkan ideolog KAMMI baru, setelah selama beberapa tahun sebelumnya belum ada yang berhasil menembus jenjang AB3. Ini adalah prestasi yang luar biasa menurut saya, untuk para pemandu dan tim kaderisasi dalam lingkungan PW KAMMI Kalteng. Diawali dari kepala bidang Kaderisasi Ukh Nuli, dan Akh Syarif di DM3 Kalimantan Selatan bulan September lalu, kemudian Ukh Siti Nur Anisa dan Akh Hasan bulan November lalu di DM3 Jakarta.
 
@@ -16,8 +17,6 @@ Suatu ketika saya coba mengumpulkan alumni-alumni KAMMI yang sudah berdomisili d
 Kader-kader kita hari ini, menurut paparan instruktur materi saya pada saat itu, keadaannya tidak banyak berubah. Rata-rata masih berorientasi terbatas, dan minim mengambil peran dalam aktivitas-aktivitas publik selayaknya alumni KAMMI era-era awal bahkan aktivis tarbiyah era hijab berlapis wig. Sementara lansekap di luar pergerakan, sudah jauh berubah. Saya mengambil kesimpulan dari kebijakan-kebijakan terakhir Presiden Joko Widodo, mulai dari pengangkatan Nadiem Makarim dan Wishnutama sebagai menteri, hingga pengangkatan staf khusus milenial sebagai sinyal anggukan bahwa ke depan, kaum muda akan mengambil peran lebih besar dalam proses berjalannya kehidupan berbangsa dan bernegara. Penggunaan kata-kata "milenial", "revolusi industri 4.0", "digital native", dan lain-lain sebagai upaya mempromosikan program-program pemerintah, ini menunjukkan mulai bergesernya generasi yang menggerakkan roda pemerintahan. Namun saya menyayangkan bahwa dari nama-nama yang muncul, sedikit yang bermunculan dari kalangan aktivis. Sebagian besar nama merupakan profesional jebolan luar negeri, yang minim pengalaman "politik aktivis lokal". Meski bisa dimaknai berbeda, namun menurut saya seharusnya kalangan aktivis juga turut mendapat peran.
 
 Saya mengira, inilah kemudian alasan mengapa PP KAMMI merilis gerakan *Impactivist* dalam Rapimnas II yang lalu. Meski sedikit dianggap keluar jalur oleh beberapa kader, namun pada akhirnya kita menyadari bahwa kita harus mengambil peran dalam dunia yang lebih luas. Karena untuk menopang narasi Kejayaan Indonesia 2045, menurut saya adalah dengan mengambil peran sebesar-besarnya dalam pelbagai bidang. Saya kira AB3 harus berorientasi lebih dari sekedar *qiyadiyah-siyasiyah*, namun menjadi bagian dari stakeholder yang mempengaruhi peran kaum muda lainnya dalam konteks berbangsa dan bernegara. Dan itu sekiranya, dimulai dari menggerakkan komunitas lokal.
-
-![Delegasi PW KAMMI Kalteng di Muktamar XI Malang](/assets/img/uploads/2020-mari-bicara-kontribusi.jpg)
 
 Maka menjelang pergantian tahun ini, saya mengajak kawan-kawan semua untuk berpikir kembali dengan kacamata seorang dai, idelog, dan *impact-maker*, peran apa yang akan kita ambil dekade ini? Seberapa jauh langkah kita dari Jayakan Indonesia 2045? Apa yang akan saya berikan untuk negeri? Atau saya akan biarkan orang lain mengambil peran tersebut. Pergantian tahun ini bukan lagi waktunya bicara resolusi-resolusi tidak jelas, namun waktunya kita menngevaluasi diri dan menyusun langkah panjang pergerakan kita sebagai orang yang benar-benar memberikan impact kepada masyarakat. Saya tantang antum yang membaca tulisan ini, 10 tahun ke depan mari bertemu dan bercerita apa *impact* yang sudah kita buat satu dekade ke belakang.
 

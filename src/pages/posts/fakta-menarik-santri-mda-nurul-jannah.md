@@ -1,4 +1,6 @@
 ---
+layout: "../../layouts/pages.astro"
+draft: true
 title: Fakta Menarik Santri MDA Nurul Jannah
 date: 2018-08-10
 tags:
