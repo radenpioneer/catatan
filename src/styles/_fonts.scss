@@ -1,0 +1,12 @@
+$system: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+$heading: 'Manrope', $system;
+$body: 'Public Sans', $system;
+
+@mixin useFont($isHeading: false) {
+    @if $isHeading {
+        font-family: $heading;
+    } @else {
+        font-family: $body;
+    }
+}

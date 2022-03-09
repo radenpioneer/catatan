@@ -3,6 +3,7 @@ title: Tukang Galon & Toxic Parenting
 date: 2021-03-21
 tags:
   - blog
+layout: "../../layouts/pages.astro"
 ---
 
 Suatu ketika sahabat saya, seorang tukang galon air minum pernah menceritakan bagaimana dirinya memilih untuk mengeluarkan anaknya dari sekolah dasar untuk dipindahkan ke sebuah pondok pesantren. Selayaknya masyarakat kita yang pada umumnya melihat sekolah umum sebagai pendidikan primer, keputusan tersebut ditentang oleh keluarga besar dan mertuanya. Namun ia berkeras dan beberapa waktu kemudian, ia membuktikan kepada keluarganya ternyata setelah masuk pesantren salafiyah, adab dan akhlaqnya lebih halus, meski pada saat itu sang anak baru beberapa bulan tinggal di pondok pesantren. 

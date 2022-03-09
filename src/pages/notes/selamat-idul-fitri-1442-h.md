@@ -2,6 +2,7 @@
 title: Selamat Hari Raya Idul Fitri 1442 H!
 date: 2021-05-14
 image: "/assets/img/uploads/ied1442/1.jpg"
+layout: "../../layouts/pages.astro"
 ---
 
 Saya, R. Ilham Sastronegoro beserta keluarga (ayah, ibu, adik, *untuk sekarang*), mengucapkan:
