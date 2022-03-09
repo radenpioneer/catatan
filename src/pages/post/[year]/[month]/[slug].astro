@@ -1,0 +1,31 @@
+---
+import PagesLayout from 'layouts:pages.astro'
+import slugify from '@sindresorhus/slugify'
+import { Markdown } from 'astro/components'
+import { DateTime } from 'luxon'
+
+export async function getStaticPaths() {
+    const posts = await Astro.fetchContent('../../../../content/posts/*.md')
+
+    return posts.map(post => {
+        return {
+            params: { 
+                year: DateTime.fromISO(post.date).toFormat('yyyy'),
+                month: DateTime.fromISO(post.date).toFormat('LL'),
+                slug: slugify(post.title)
+            },
+            props: { post }
+        }
+    })
+}
+
+const { year, month, slug } = Astro.request.params
+const { post } = Astro.props
+---
+<PagesLayout
+    title={post.title}
+    date={post.date}
+    subtitle={post.description}
+>
+    <Markdown content={post.astro.source} />
+</PagesLayout>

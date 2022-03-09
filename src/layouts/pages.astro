@@ -1,0 +1,44 @@
+---
+import BaseLayout from './base.astro'
+import { DateTime } from 'luxon'
+const { title, subtitle, date } = Astro.props
+---
+<BaseLayout title={title}>
+    <article class="article">
+        <header class="article__header">
+            {subtitle ? (
+                <div class="article__subtitle">{subtitle}</div>
+            ) : null}
+            <h1 class="article__title">{title}</h1>
+            <p class="article__date">
+                <time datetime={date}>{DateTime.fromISO(date).setLocale('id').toLocaleString(DateTime.DATE_FULL)}</time>
+            </p>
+        </header>
+        <main class="article__content">
+            <slot />
+        </main>
+    </article>
+</BaseLayout>
+
+<style lang="scss">
+    .article {
+        @apply max-w-screen-md mx-auto;
+    }
+
+    .article__header {
+        @apply flex flex-col items-center gap-4 py-8;
+        .article__title {
+            @apply font-extrabold text-4xl lg:text-6xl text-center;
+        }
+        .article__subtitle {
+            @apply font-bold text-lg text-accent uppercase text-center;
+        }
+        .article__date {
+            @apply text-lg text-center text-secondary;
+        }
+    }
+
+    .article__content {
+        @apply prose-lg lg:prose-xl max-w-none;
+    }
+</style>

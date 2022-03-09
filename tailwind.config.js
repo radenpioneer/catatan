@@ -1,35 +1,16 @@
-const defaultTheme = require('tailwindcss/defaultTheme')
-const colors = require('tailwindcss/colors')
-
 module.exports = {
-  purge: {
-    enabled: true,
-    content: [
-      './src/**/*.html',
-      './src/**/*.liquid'
-    ]
-  },
-  darkMode: false, // or 'media' or 'class'
-  corePlugins: {
-    animation: false
-  },
+  content: [
+    './public/**/*.html',
+    './src/**/*.{astro,js,jsx,svelte,ts,tsx,vue}'
+  ],
   theme: {
-    fontFamily: {
-      customHeading: ['Fraunces', ...defaultTheme.fontFamily.serif]
-    },
-    extend: {
-      fontFamily: {
-        sans: ['Inter', ...defaultTheme.fontFamily.sans]
-      },
-      colors: {
-        lightBlue: colors.lightBlue
-      }
-    },
-  },
-  variants: {
     extend: {},
   },
   plugins: [
+    require('daisyui'),
     require('@tailwindcss/typography')
   ],
+  daisyui: {
+    themes: false
+  }
 }
