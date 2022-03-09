@@ -11,7 +11,7 @@ collections:
     create: true
     editor:
       preview: false
-    slug: "{{ slug }}"
+    slug: "{{slug}}"
     fields:
       - label: Layout
         name: layout
@@ -26,9 +26,11 @@ collections:
       - label: Image
         name: image
         widget: image
+        required: false
       - label: Tags
         name: tags
         widget: list
+        required: false
       - label: Draft
         name: draft
         widget: boolean
