@@ -3,3 +3,8 @@
     command = "yarn dev"
     autoLaunch = false
     targetPort = 3000
+
+[[plugins]]
+    package = "netlify-plugin-minify-html"
+    [plugins.inputs.minifierOptions]
+        collapseWhitespace = true
