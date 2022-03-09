@@ -1,0 +1,9 @@
+# packages and built files
+.github
+.netlify
+dist/
+node_modules/
+
+# content
+src/pages/notes/
+src/pages/posts/

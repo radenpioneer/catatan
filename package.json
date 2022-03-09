@@ -11,8 +11,10 @@
     "dev:astro": "astro dev",
     "dev:proxy": "npx netlify-cms-proxy-server",
     "dev": "run-p dev:*",
+    "prebuild": "yarn prettier --check .",
     "build": "astro build",
-    "preview": "astro preview"
+    "preview": "astro preview",
+    "format": "yarn prettier --write ."
   },
   "keywords": [],
   "author": "R. Ilham Sastronegoro",
@@ -31,6 +33,8 @@
     "postcss": "^8.4.8",
     "postcss-font-magician": "^3.0.0",
     "postcss-preset-env": "^7.4.2",
+    "prettier": "2.5.1",
+    "prettier-plugin-astro": "^0.0.12",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "sass": "^1.49.9",

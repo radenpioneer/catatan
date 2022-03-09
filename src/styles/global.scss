@@ -1,9 +1,9 @@
-@use './tw';
-@use './fonts';
+@use "./tw";
+@use "./fonts";
 
 body {
-    @include fonts.useFont();
-    @apply flex flex-col min-h-screen px-8;
+  @include fonts.useFont();
+  @apply flex flex-col min-h-screen px-8;
 }
 
 h1,
@@ -12,5 +12,5 @@ h3,
 h4,
 h5,
 h6 {
-    @include fonts.useFont($isHeading: true);
+  @include fonts.useFont($isHeading: true);
 }

@@ -11,6 +11,7 @@ git clone https://github.com/radenpioneer/blog.git
 npm install
 npm start
 ```
+
 kemudian buka alamat [localhost:8080](http://localhost:8080)
 
 ## Status
