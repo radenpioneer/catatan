@@ -1,0 +1,17 @@
+---
+import BaseLayout from './base.astro'
+---
+<BaseLayout>
+    <article class="article">
+        <header></header>
+        <main>
+            <slot />
+        </main>
+    </article>
+</BaseLayout>
+
+<style lang="scss">
+    .article {
+        @apply max-w-screen-lg mx-auto;
+    }
+</style>

@@ -1,10 +1,5 @@
-[build]
-    command = "cross-env ELEVENTY_ENV=prod npm run build"
-    publish = "dist/"
-    
 [dev]
-    command = "npm start"
+    framework = "#custom"
+    command = "yarn dev"
     autoLaunch = false
-
-[[plugins]]
-    package = "./plugins/netlify/cache"
+    targetPort = 3000

@@ -1,0 +1,26 @@
+---
+import '../styles/global.scss'
+---
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <title>radenpioneer.blog</title>
+</head>
+<body class="body">
+    <section class="main__section">
+        <slot />
+    </section>
+</body>
+</html>
+
+<style global lang="scss">
+    @use '../styles/global.scss';
+
+    .body {
+        @apply flex flex-col min-h-screen px-8;
+    }
+
+    .main__section {
+        @apply flex-auto;
+    }
+</style>
