@@ -10,7 +10,7 @@ const NewsCard:React.FC = ({ title, subtitle, date, url, image="" }) => {
                 </h3>
                 <div>{subtitle}</div>
                 <div className="mt-auto">
-                    <time datetime={date}>{DateTime.fromISO(date).setLocale('id').toLocaleString(DateTime.DATE_FULL)}</time>
+                    <time dateTime={date}>{DateTime.fromISO(date).setLocale('id').toLocaleString(DateTime.DATE_FULL)}</time>
                 </div>
             </div>
             {image ? (

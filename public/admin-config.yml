@@ -1,0 +1,38 @@
+backend:
+  name: git-gateway
+  branch: main
+media_folder: "public/uploads"
+public_folder: "/uploads"
+local_backend: true
+collections:
+  - name: "posts"
+    label: "Posts"
+    folder: "src/pages/posts"
+    create: true
+    editor:
+      preview: false
+    slug: "{{ slug }}"
+    fields:
+      - label: Layout
+        name: layout
+        widget: hidden
+        default: "../../layouts/pages.astro"
+      - label: Title
+        name: title
+        widget: string
+      - label: Publish Date
+        name: date
+        widget: datetime
+      - label: Image
+        name: image
+        widget: image
+      - label: Tags
+        name: tags
+        widget: list
+      - label: Draft
+        name: draft
+        widget: boolean
+        default: true
+      - label: Body
+        name: body
+        widget: markdown
