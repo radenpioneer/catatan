@@ -1,0 +1,16 @@
+---
+import { DateTime } from 'luxon'
+---
+
+<footer class="footer">
+    <div class="footer__copy">{`&copy; ${DateTime.now().toFormat('yyyy')}`}</div>
+</footer>
+
+<style>
+    .footer {
+        @apply flex flex-row justify-center mt-16 py-8;
+        .footer__copy {
+            @apply text-base-300;
+        }
+    }
+</style>

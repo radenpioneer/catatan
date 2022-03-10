@@ -8,3 +8,9 @@
     package = "netlify-plugin-minify-html"
     [plugins.inputs.minifierOptions]
         collapseWhitespace = true
+
+[[redirects]]
+    from = "/beranda"
+    to = "/"
+    status = "301"
+    force = "true"

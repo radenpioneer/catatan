@@ -1,5 +1,7 @@
 ---
 import "styles:global.scss";
+import Header from "components:header/header.astro";
+import Footer from 'components:footer/footer.astro'
 
 const { title } = Astro.props;
 ---
@@ -18,9 +20,11 @@ const { title } = Astro.props;
     >
   </head>
   <body>
+    <Header />
     <main class="main__section">
       <slot />
     </main>
+    <Footer />
     <script>
       if (window.netlifyIdentity) {
         window.netlifyIdentity.on("init", (user) => {

@@ -7,6 +7,7 @@ Blog pribadi, dibangun dari nol dengan memanfaatkan tenaga Node.JS, menggunakan 
 ## Development lokal
 
 Jalankan perintah berikut ini:
+
 ```
 npx degit https://github.com/radenpioneer/blog.git
 yarn

@@ -1,8 +1,21 @@
 ---
 import BaseLayout from "layouts:base.astro";
-import PostSection from "components:posts.astro";
+import PostSection from "components:posts/posts.astro";
+import { DateTime } from "luxon";
+
+const data = await Astro.fetchContent("../pages/posts/*.md");
+const posts = data
+  .filter((item) =>
+    import.meta.env.MODE !== "development" ? !item.draft : true
+  )
+  .sort((a, b) => {
+    return (
+      DateTime.fromISO(b.date).toMillis() - DateTime.fromISO(a.date).toMillis()
+    );
+  })
+  .slice(0, 8);
 ---
 
 <BaseLayout>
-  <PostSection />
+  <PostSection title="Pos Utama" {posts} />
 </BaseLayout>
