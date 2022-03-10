@@ -1,20 +1,16 @@
-# radenpioneer.netlify.app
+# radenazure86.netlify.app
 
-Blog pribadi, dibangun dari nol dengan memanfaatkan tenaga Node.JS, menggunakan [Eleventy](https://11ty.dev) dan [Tailwind CSS](https://tailwindcss.com/). [AMP](https://amp.dev)-first blog.
+[![Netlify Status](https://api.netlify.com/api/v1/badges/ff9e9d9c-e2c0-48de-90f6-68b36d632bb2/deploy-status)](https://app.netlify.com/sites/radenazure86/deploys)
+
+Blog pribadi, dibangun dari nol dengan memanfaatkan tenaga Node.JS, menggunakan [Astro](https://astro.build).
 
 ## Development lokal
 
 Jalankan perintah berikut ini:
-
 ```
-git clone https://github.com/radenpioneer/blog.git
-npm install
-npm start
+npx degit https://github.com/radenpioneer/blog.git
+yarn
+yarn dev
 ```
 
-kemudian buka alamat [localhost:8080](http://localhost:8080)
-
-## Status
-
-[![Netlify Status](https://api.netlify.com/api/v1/badges/086d0742-8310-42b8-a5c5-f2dc4589ca13/deploy-status)](https://app.netlify.com/sites/radenpioneer/deploys)
-[![devDependencies](https://david-dm.org/radenpioneer/blog/dev-status.svg/)](https://david-dm.org/radenpioneer/blog/?type=dev)
+kemudian buka `localhost:3000`
