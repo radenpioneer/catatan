@@ -1,3 +1,1 @@
-FROM gitpod/workspace-node
-
-RUN npm install -g netlify-cli
+FROM gitpod/workspace-node-lts
