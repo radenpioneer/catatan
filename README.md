@@ -1,17 +1,9 @@
 # radenazure86.netlify.app
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/ff9e9d9c-e2c0-48de-90f6-68b36d632bb2/deploy-status)](https://app.netlify.com/sites/radenazure86/deploys)
+My once glorious blog, is now at [this repo.](https://github.com/radenpioneer/radenazure)
 
-Blog pribadi, dibangun dari nol dengan memanfaatkan tenaga Node.JS, menggunakan [Astro](https://astro.build).
+This repo is now archived for good.
 
-## Development lokal
+### The blog
 
-Jalankan perintah berikut ini:
-
-```
-npx degit https://github.com/radenpioneer/blog.git
-yarn
-yarn dev
-```
-
-kemudian buka `localhost:3000`
+The blog was built with [Eleventy](https://11ty.dev).
