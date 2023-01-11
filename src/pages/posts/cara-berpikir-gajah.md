@@ -1,5 +1,5 @@
 ---
-layout: ~/layouts/pages.astro
+layout: ~/layouts/posts.astro
 title: Cara Berpikir Gajah
 date: 2013-02-13
 image: https://source.unsplash.com/QJbyG6O0ick/1600x1000

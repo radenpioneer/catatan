@@ -1,5 +1,5 @@
 ---
-layout: "~/layouts/pages.astro"
+layout: "~/layouts/posts.astro"
 draft: true
 title: Madrasah KAMMI Digital
 description: Pengembangan Esai DPMK Tasikmalaya 2017

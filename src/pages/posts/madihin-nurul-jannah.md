@@ -1,5 +1,5 @@
 ---
-layout: ~/layouts/pages.astro
+layout: ~/layouts/posts.astro
 title: Madihin Nurul Jannah
 date: 2020-07-30
 image: ""

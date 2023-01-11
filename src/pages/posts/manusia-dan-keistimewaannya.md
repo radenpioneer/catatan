@@ -1,11 +1,11 @@
 ---
-layout: ~/layouts/pages.astro
+layout: ~/layouts/posts.astro
 title: Manusia dan Keistimewaannya
 date: 2013-02-14
 image: https://source.unsplash.com/oko_4WnoM98/1600x1000
 tags:
   - archived
-draft: false
+draft: true
 ---
 
 Manusia memiliki banyak keistimewaan. Keistimewaan yang pertama, Manusia terlahir sebagai makhluk yang mulia, manusia adalah makhluk yang lebih mulia dari malaikat, jin, dan seluruh seluruh makhluk penghuni surga lainnya dan setelah penciptaan manusia selesai Allah memerintahkan seluruh penduduk surga untuk bersujud kepadanya.

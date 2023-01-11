@@ -1,5 +1,5 @@
 ---
-layout: ~/layouts/pages.astro
+layout: ~/layouts/posts.astro
 title: 2020, Mari Bicara Kontribusi
 date: 2019-12-31
 image: ""

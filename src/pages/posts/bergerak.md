@@ -1,10 +1,10 @@
 ---
-layout: ~/layouts/pages.astro
+layout: ~/layouts/posts.astro
 title: Bergerak
 date: 2014-06-26
 tags:
   - archived
-draft: false
+draft: true
 ---
 
 Waktu itu aku masih jadi santri baru. Suatu hari, sekitar jam 3 sore, saat semua santri sedang asyik bersama Al-Qur’an-nya masing-masing, tiba-tiba ada pengumuman dari pengurus rayon. _"Santri asal Kalimantan, kumpul di dekat tangga,"_ begitulah isi pengumumannya. Ternyata ada Ustadz Irsyad Al-Banjary, salah satu senior kami dari Banjarmasin duduk manis menunggu kami di sana. dan pada perkumpulan itulah, untuk pertama kalinya dalam sejarah hidupku aku mendengar,

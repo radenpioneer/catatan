@@ -1,5 +1,5 @@
 ---
-layout: "~/layouts/pages.astro"
+layout: "~/layouts/posts.astro"
 draft: true
 title: Peran Pemuda dalam Menghadapi Pilkada di Era 4.0
 description: Studium Generale Musda VI KAMMI Palangka Raya

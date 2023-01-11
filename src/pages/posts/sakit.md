@@ -1,5 +1,5 @@
 ---
-layout: "~/layouts/pages.astro"
+layout: "~/layouts/posts.astro"
 draft: true
 title: Sakit
 date: 2015-06-16

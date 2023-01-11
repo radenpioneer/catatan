@@ -1,5 +1,5 @@
 ---
-layout: ~/layouts/pages.astro
+layout: ~/layouts/posts.astro
 title: Islam Feminis, atau Feminis Islam?
 date: 2021-03-09
 draft: true

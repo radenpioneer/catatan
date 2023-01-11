@@ -1,0 +1,27 @@
+---
+import PagesLayout from "./pages.astro";
+import { SEO } from "astro-seo";
+import { Picture } from "@astrojs/image/components";
+
+const { frontmatter: fm } = Astro.props;
+---
+
+<PagesLayout title={fm.title}>
+  <SEO title={fm.title} slot="head" />
+  {
+    fm.image && (
+      <p>
+        <Picture
+          src={fm.image}
+          alt={fm.title}
+          widths={[640]}
+          sizes="100vh"
+          aspectRatio={3 / 4}
+          formats={["avif", "webp"]}
+        />
+      </p>
+    )
+  }
+
+  <slot />
+</PagesLayout>

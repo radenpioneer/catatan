@@ -1,5 +1,5 @@
 ---
-layout: "~/layouts/pages.astro"
+layout: "~/layouts/posts.astro"
 draft: true
 title: Tidak cukup man jadda wajada
 date: 2015-03-06
