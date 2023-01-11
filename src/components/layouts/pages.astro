@@ -1,0 +1,17 @@
+---
+import Layout from "./layout.astro";
+
+const { title } = Astro.props as { title: string };
+---
+
+<Layout>
+  <Fragment slot="head">
+    <slot name="head" />
+  </Fragment>
+  <section>
+    <article>
+      <h1>{title}</h1>
+      <slot />
+    </article>
+  </section>
+</Layout>

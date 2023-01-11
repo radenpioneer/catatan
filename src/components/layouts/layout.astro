@@ -1,0 +1,14 @@
+---
+import BaseLayout from "./base.astro";
+
+import "~/styles/global.scss";
+---
+
+<BaseLayout>
+  <Fragment slot="head">
+    <slot name="head" />
+  </Fragment>
+  <main>
+    <slot />
+  </main>
+</BaseLayout>

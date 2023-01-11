@@ -1,11 +1,12 @@
 ---
-layout: ../../layouts/pages.astro
+layout: ~/layouts/pages.astro
 title: Cara Berpikir Gajah
 date: 2013-02-13
 image: https://source.unsplash.com/QJbyG6O0ick/1600x1000
 tags: []
 draft: false
 ---
+
 Ketika teman saya sedang melewati gajah, ia tiba-tiba berhenti, bingung dengan makhluk-makhluk besar yang diikat oleh tali kecil pada kaki depan mereka. Gajah tidak rantai, juga tidak dikandang. Sudah jelas gajah bisa melepaskan diri kapan saja dari tali yang mengikat gajah tersebut. Teman saya bertanya ke pelatih yang ada didekatnya, kenapa hewan-hewan besar (gajah) itu tidak berusaha melarikan diri, padahal itu adalah sangat mudah untuk gajah lakukan.
 
 ![Ilustrasi gajah](https://source.unsplash.com/QJbyG6O0ick/1600x1000)

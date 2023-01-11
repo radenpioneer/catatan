@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/pages.astro
+layout: ~/layouts/pages.astro
 title: Manusia dan Keistimewaannya
 date: 2013-02-14
 image: https://source.unsplash.com/oko_4WnoM98/1600x1000
@@ -7,6 +7,7 @@ tags:
   - archived
 draft: false
 ---
+
 Manusia memiliki banyak keistimewaan. Keistimewaan yang pertama, Manusia terlahir sebagai makhluk yang mulia, manusia adalah makhluk yang lebih mulia dari malaikat, jin, dan seluruh seluruh makhluk penghuni surga lainnya dan setelah penciptaan manusia selesai Allah memerintahkan seluruh penduduk surga untuk bersujud kepadanya.
 
 Mengapa begitu? Mengapa manusia yang notabene diciptakan dari tanah bisa lebih mulia dari malaikat yang diciptakan dari cahaya? Dan bisa lebih mulia dari jin yang diciptakan dari api? Jin yang tidak terima pun kemudian protes dan didepak dari surga. Sebenarnya, Allah lebih tahu tentang hambanya yang mulia. Manusia diciptakan dari tanah. Tanah adalah komponen alam yang sangat menarik, tanah mengandung kehidupan, dan bisa menumbuhkan. Tanah juga elastis dan bisa dibentuk. Tanah juga bersifat menetap Dan di atas tanah kita bisa membangun apa pun ang kita inginkan. Mungkin karena itu zaman sekarang tanah begitu mahal.
@@ -21,6 +22,6 @@ Keistimewaan yang ketiga adalah manusia diberi kemampuan untuk menamai segala se
 
 Dan saya tekankan di sini, bahwa manusia pada intinya adalah sama. Kita semua adalah umat manusia yang berasal dari satu spesies yang sama, nenek moyang yang sama yang sering kita sebut Nabi Adam. Tidak ada yang membedakan antara satu bangsa dengan bangsa yang lain kecuali keimanan dan ilmu pengetahuan mereka. Bangsa yang memiliki iman yang kokoh dan pengetahuan yang tinggi akan diangkat derajatnya oleh Allah dan seluruh makhluknya. Dan bangsa yang memiliki iman yang lemah dan pengetahuan yang rendah akan diturunkan derajatnya oleh Allah dan seluruh makhluknya.
 
-*Terima kasih banyak kepada [Ustadz Izdiyan Muttaqien](http://izdiyan.blogspot.com/2013/02/manusia-dan-keistimewaannya.html).*
+_Terima kasih banyak kepada [Ustadz Izdiyan Muttaqien](http://izdiyan.blogspot.com/2013/02/manusia-dan-keistimewaannya.html)._
 
-*Direstorasi dari blog lama, yang linknya ada di [sini](https://web.archive.org/web/20130217224707/http://radenazure.wordpress.com/2013/02/14/manusia-keistimewaannya/).*
+_Direstorasi dari blog lama, yang linknya ada di [sini](https://web.archive.org/web/20130217224707/http://radenazure.wordpress.com/2013/02/14/manusia-keistimewaannya/)._

@@ -1,10 +1,10 @@
 ---
-layout: "../../layouts/pages.astro"
+layout: "~/layouts/pages.astro"
 draft: true
 title: Fakta Menarik Santri MDA Nurul Jannah
 date: 2018-08-10
 tags:
-    - archived
+  - archived
 ---
 
 Mungkin hal-hal berikut di bawah ini akan jarang kita temukan di sekolah umum manapun. Berdasarkan pengalaman saya ketika mengajar di PP Nurul Jannah Sawahan:
@@ -22,14 +22,14 @@ Dahulu kala, saya pernah belajar sebuah prinsip yang berharga dalam dunia pendid
 
 MDA Nurul Jannah ini hanya tempat kecil, jauh tersembunyi. Tapi pun yang kecil ini rupanya merupakan sumber cahaya baru pendidikan generasi muda di Kotim. Cahaya-cahaya yang akan menyebar mencerahkan dan mendidik masyarakat Kotim menuju keberkahan Islam. Dan keberkahan Islam itu hadir karena dihidupkannya kembali budaya ilmu. Budaya yang sudah lama menghilang dari generasi kita, menghilang karena pendidikan instan berorientasi nilai di atas kertas. Maka bersyukurlah, Kotim, karena di tempat kecil ini masih ada balita yang merengek minta ngaji!
 
-*Sastronegoro*
+_Sastronegoro_
 
-# Catatan 25/11/2019: 
+# Catatan 25/11/2019:
 
 Postingan lama ini dipublish tahun 2018 lalu, saat saya masih ngajar di PP Nurul Jannah Sawahan Sampit. Di-up kembali karena memang sangat-sangat relevan dengan kondisi pendidikan anak saat ini.
 
 Saya juga membantu mengajar di salah sebuah SD Islam Terpadu, namun bagaimanapun sistem pendidikan pesantren tidak dapat dibandingkan dengan sistem sekolah umum manapun, sesholeh apapun si pengelola sekolah.
 
-**Pendidikan sekolah umum, apapun brandingnya -- Islam Terpadu -kah, Full-day-school-kah -- tetap menggunakan dasar pemikiran dan tujuan sekolah umum pada umumnya, yakni mencetak manusia-manusia  ijazah.** Khususnya di zaman sekarang, saat orang tua menjadikan sekolah sebagai "tempat penitipan sementara", dan guru-guru bukan mengajar, tapi "bekerja". Hari ini kita sudah melihat betapa banyak siswa yang menentang gurunya, berapa banyak siswa yang menganggap gurunya lebih sebagai kawan belaka dan lupa akan keberkahan belajar kepada guru. Lupa akan berkah dan kemuliaan menuntut ilmu. Ini tidak berarti bahwa si pengelola sekolah tidak paham ilmu agama. 
+**Pendidikan sekolah umum, apapun brandingnya -- Islam Terpadu -kah, Full-day-school-kah -- tetap menggunakan dasar pemikiran dan tujuan sekolah umum pada umumnya, yakni mencetak manusia-manusia ijazah.** Khususnya di zaman sekarang, saat orang tua menjadikan sekolah sebagai "tempat penitipan sementara", dan guru-guru bukan mengajar, tapi "bekerja". Hari ini kita sudah melihat betapa banyak siswa yang menentang gurunya, berapa banyak siswa yang menganggap gurunya lebih sebagai kawan belaka dan lupa akan keberkahan belajar kepada guru. Lupa akan berkah dan kemuliaan menuntut ilmu. Ini tidak berarti bahwa si pengelola sekolah tidak paham ilmu agama.
 
 Saya ingat betul bahwa suatu ketika si pengelola sekolah tampak membaca buku terjemahan Ta'limul Muta'allim karangan Syaikh Az-Zarnuji. Dalam banyak kesempatan, si pengelola sekolah tampak khusyuk menyelesaikan targetan satu juz-nya. Namun di sekitarnya, murid-muridnya berlarian tanpa akhlak. Murid dengan seenaknya naik meja, padahal ada guru di kelasnya. Murid dengan seenaknya berlarian, saling berkelahi, saling ejek. Di Sekolah Dasar Islam Terpadu.

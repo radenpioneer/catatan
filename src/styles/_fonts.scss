@@ -1,38 +1,10 @@
 $system: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-  Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue";
 
-$heading: "Exo", $system;
-$body: "Public Sans", $system;
-
-@mixin useFont($isHeading: false) {
-  @if $isHeading {
-    font-family: $heading;
-  } @else {
-    font-family: $body;
-  }
+%heading {
+  font-family: $system, sans-serif;
 }
 
-@mixin useIcons {
-  font-family: "Material Icons";
-  font-weight: normal;
-  font-style: normal;
-  font-size: 24px; /* Preferred icon size */
-  display: inline-block;
-  line-height: 1;
-  text-transform: none;
-  letter-spacing: normal;
-  word-wrap: normal;
-  white-space: nowrap;
-  direction: ltr;
-
-  /* Support for all WebKit browsers. */
-  -webkit-font-smoothing: antialiased;
-  /* Support for Safari and Chrome. */
-  text-rendering: optimizeLegibility;
-
-  /* Support for Firefox. */
-  -moz-osx-font-smoothing: grayscale;
-
-  /* Support for IE. */
-  font-feature-settings: "liga";
+%body {
+  font-family: $system, sans-serif;
 }
