@@ -7,20 +7,31 @@ const { content } = Astro.props;
 <BaseLayout title={content.title}>
   <article class="article">
     <header class="article__header">
-      {content.image ? (
-                <div class="article__image">
-                    <img src={content.image} width={400} height={300} alt={content.title}>
-                </div>
-            ) : null}
-      {content.description ? (
-        <div class="article__subtitle">{content.description}</div>
-      ) : null}
+      {
+        content.image ? (
+          <div class="article__image">
+            <img
+              src={content.image}
+              width={400}
+              height={300}
+              alt={content.title}
+            />
+          </div>
+        ) : null
+      }
+      {
+        content.description ? (
+          <div class="article__subtitle">{content.description}</div>
+        ) : null
+      }
       <h1 class="article__title">{content.title}</h1>
       <p class="article__date">
         <time datetime={content.date}
-          >{DateTime.fromISO(content.date)
-            .setLocale("id")
-            .toLocaleString(DateTime.DATE_FULL)}</time
+          >{
+            DateTime.fromISO(content.date)
+              .setLocale("id")
+              .toLocaleString(DateTime.DATE_FULL)
+          }</time
         >
       </p>
     </header>

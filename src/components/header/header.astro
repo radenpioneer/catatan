@@ -25,11 +25,16 @@ const menu = [
 
 <header class="header">
   <div class="header__nav">
-    {menu.map((item) => (
-      <a class="btn btn-neutral btn-outline btn-circle" href={`/${item.slug}`}>
-        <span class="icon">{item.icon}</span>
-      </a>
-    ))}
+    {
+      menu.map((item) => (
+        <a
+          class="btn btn-neutral btn-outline btn-circle"
+          href={`/${item.slug}`}
+        >
+          <span class="icon">{item.icon}</span>
+        </a>
+      ))
+    }
   </div>
   <div>
     <a class="h text-xl uppercase" href="/">radenazure86.blog</a>

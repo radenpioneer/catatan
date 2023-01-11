@@ -6,15 +6,17 @@ const { title, posts } = Astro.props;
 
 <section class="posts">
   <h2 class="title">{title}</h2>
-  {posts.length === 0 ? (
-    <div>Belum ada postingan.</div>
-  ) : (
-    <div class="postsgrid">
-      {posts.map((post) => (
-        <PostCard post={post} client:visible />
-      ))}
-    </div>
-  )}
+  {
+    posts.length === 0 ? (
+      <div>Belum ada postingan.</div>
+    ) : (
+      <div class="postsgrid">
+        {posts.map((post) => (
+          <PostCard post={post} client:visible />
+        ))}
+      </div>
+    )
+  }
   <div class="more">
     <a href="#">Semua Pos</a>
   </div>

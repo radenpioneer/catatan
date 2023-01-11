@@ -1,16 +1,5 @@
 [dev]
-    framework = "#custom"
-    command = "yarn dev"
+    framework = "astro"
+    command = "pnpm dev"
     autoLaunch = false
     targetPort = 3000
-
-[[plugins]]
-    package = "netlify-plugin-minify-html"
-    [plugins.inputs.minifierOptions]
-        collapseWhitespace = true
-
-[[redirects]]
-    from = "/beranda"
-    to = "/"
-    status = "301"
-    force = "true"

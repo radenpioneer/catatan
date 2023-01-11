@@ -3,6 +3,7 @@
 .netlify
 dist/
 node_modules/
+pnpm-lock.yaml
 
 # content
 src/pages/notes/

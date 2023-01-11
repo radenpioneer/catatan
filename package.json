@@ -2,44 +2,37 @@
   "name": "sastronegoro",
   "version": "2.0.0",
   "description": "notes and thoughts",
-  "main": "index.js",
+  "keywords": [],
   "repository": {
     "type": "git",
     "url": "https://github.com/radenpioneer/blog.git"
   },
-  "scripts": {
-    "dev:astro": "astro dev",
-    "dev:proxy": "npx netlify-cms-proxy-server",
-    "dev": "run-p dev:*",
-    "prebuild": "yarn prettier --check .",
-    "build": "astro build",
-    "preview": "astro preview",
-    "format": "yarn prettier --write ."
-  },
-  "keywords": [],
-  "author": "R. Ilham Sastronegoro",
   "license": "ISC",
+  "author": "R. Ilham Sastronegoro",
+  "main": "index.js",
+  "scripts": {
+    "prebuild": "pnpx npm-run-all -p check:*",
+    "build": "astro build",
+    "check:errors": "astro check && tsc --noEmit",
+    "check:styles": "pnpx prettier --plugin-search-dir=. --check .",
+    "dev": "astro dev",
+    "format": "pnpx prettier --plugin-search-dir=. --write .",
+    "preinstall": "npx only-allow pnpm",
+    "preview": "astro preview"
+  },
   "dependencies": {
-    "@astrojs/renderer-react": "^0.5.0",
-    "astro": "^0.23.7"
+    "@tailwindcss/typography": "^0.5.9",
+    "astro": "^1.9.1",
+    "daisyui": "^2.46.1",
+    "postcss": "^8.4.21",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "sass": "^1.57.1",
+    "tailwindcss": "^3.2.4"
   },
   "devDependencies": {
-    "@sindresorhus/slugify": "^2.1.0",
-    "@tailwindcss/typography": "^0.5.2",
-    "@types/node": "^17.0.21",
-    "@types/react": "^17.0.39",
-    "daisyui": "^2.6.3",
-    "luxon": "^2.3.1",
-    "netlify-plugin-minify-html": "^0.3.1",
-    "npm-run-all": "^4.1.5",
-    "postcss": "^8.4.8",
-    "postcss-font-magician": "^3.0.0",
-    "postcss-preset-env": "^7.4.2",
-    "prettier": "2.5.1",
-    "prettier-plugin-astro": "^0.0.12",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "sass": "^1.49.9",
-    "tailwindcss": "^3.0.23"
+    "@types/node": "^18.11.18",
+    "@types/react": "^18.0.26",
+    "typescript": "^4.9.4"
   }
 }

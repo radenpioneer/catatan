@@ -1,5 +1,5 @@
 {
-    "build": {
-        "dockerfile": "../.gitpod.Dockerfile"
-    }
+  "build": {
+    "dockerfile": "../.gitpod.Dockerfile"
+  }
 }
