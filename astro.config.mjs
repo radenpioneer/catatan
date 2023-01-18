@@ -4,11 +4,19 @@ import image from "@astrojs/image";
 import mdx from "@astrojs/mdx";
 
 // https://astro.build/config
+import critters from "astro-critters";
+import compress from "astro-compress";
+
+// https://astro.build/config
 export default defineConfig({
   site: "https://notes.radenpioneer.blog",
   integrations: [
     react(),
-    image({ serviceEntryPoint: "@astrojs/image/sharp" }),
+    image({
+      serviceEntryPoint: "@astrojs/image/sharp",
+    }),
     mdx(),
+    critters(),
+    compress(),
   ],
 });
