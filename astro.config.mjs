@@ -2,8 +2,6 @@ import { defineConfig } from "astro/config";
 import react from "@astrojs/react";
 import image from "@astrojs/image";
 import mdx from "@astrojs/mdx";
-
-// https://astro.build/config
 import critters from "astro-critters";
 import compress from "astro-compress";
 

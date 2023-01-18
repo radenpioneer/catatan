@@ -1,0 +1,78 @@
+---
+import { Picture } from "@astrojs/image/components";
+
+const NAV_MENU = [
+  {
+    title: "Tentang",
+    path: "/#tentang",
+  },
+];
+---
+
+<nav>
+  <ul class="title">
+    <li>
+      <a href="/">
+        <Picture
+          src="https://placekitten.com/360/360"
+          alt="notes.radenpioneer.blog"
+          widths={[65]}
+          aspectRatio={1 / 1}
+          sizes="100vw"
+          formats={["avif", "webp", "jpeg"]}
+        />
+      </a>
+    </li>
+  </ul>
+  <ul class="menu">
+    {
+      NAV_MENU.map((menu) => (
+        <li>
+          <a href={menu.path}>{menu.title}</a>
+        </li>
+      ))
+    }
+  </ul>
+</nav>
+
+<style lang="scss">
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    ul {
+      margin: 0;
+      padding: 0;
+
+      li {
+        list-style: none;
+      }
+    }
+  }
+
+  .title {
+    img {
+      width: 65px;
+      height: 65px;
+
+      border-radius: 9999px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    nav {
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .menu {
+      display: none;
+    }
+  }
+</style>

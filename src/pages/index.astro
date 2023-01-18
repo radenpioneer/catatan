@@ -1,7 +1,17 @@
 ---
 import Layout from "~/layouts/layout.astro";
+
+const posts = await Astro.glob("./posts/*.mdx");
 ---
 
 <Layout>
-  <h1>Hello World!</h1>
+  {
+    posts.map((post) => (
+      <article>
+        <a href={post.url}>
+          <h3>{post.frontmatter.title}</h3>
+        </a>
+      </article>
+    ))
+  }
 </Layout>

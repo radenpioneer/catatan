@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "./base.astro";
+import Nav from "../site/nav.astro";
 
 import "~/styles/global.scss";
 ---
@@ -9,6 +10,7 @@ import "~/styles/global.scss";
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <slot name="head" />
   </Fragment>
+  <Nav />
   <main class="container">
     <slot />
   </main>
