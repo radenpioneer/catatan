@@ -1,3 +1,3 @@
-import flamethrower from "flamethrower-router";
+import flamethrower from 'flamethrower-router'
 
-flamethrower({ prefetch: "visible" });
+flamethrower({ prefetch: 'visible' })

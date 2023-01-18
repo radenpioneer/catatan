@@ -1,5 +1,5 @@
 ---
-layout: "~/layouts/posts.astro"
+layout: '~/layouts/posts.astro'
 draft: true
 title: Fakta Menarik Santri MDA Nurul Jannah
 date: 2018-08-10

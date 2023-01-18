@@ -1,5 +1,5 @@
 ---
-layout: "~/layouts/posts.astro"
+layout: '~/layouts/posts.astro'
 draft: true
 title: Madrasah KAMMI Digital
 description: Pengembangan Esai DPMK Tasikmalaya 2017
@@ -46,7 +46,7 @@ _Wallahu a'lam bis-shawab._
 **R. Ilham Sastronegoro**\
 _Sekjend PW KAMMI Kalteng_
 
-![DPMK Tasikmalaya 2017](/assets/img/uploads/madrasah-kammi-digital.jpg "DPMK Tasikmalaya 2017")
+![DPMK Tasikmalaya 2017](/assets/img/uploads/madrasah-kammi-digital.jpg 'DPMK Tasikmalaya 2017')
 
 ## Referensi
 

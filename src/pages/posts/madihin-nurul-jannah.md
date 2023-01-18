@@ -2,7 +2,7 @@
 layout: ~/layouts/posts.astro
 title: Madihin Nurul Jannah
 date: 2020-07-30
-image: ""
+image: ''
 draft: true
 description: PP Nurul Jannah Sawahan Sampit
 tags: []
