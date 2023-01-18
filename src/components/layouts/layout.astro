@@ -6,9 +6,10 @@ import "~/styles/global.scss";
 
 <BaseLayout>
   <Fragment slot="head">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <slot name="head" />
   </Fragment>
-  <main>
+  <main class="container">
     <slot />
   </main>
 </BaseLayout>
