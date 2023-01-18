@@ -1,9 +1,15 @@
 ---
+import type { MDXLayoutProps } from "astro";
 import PagesLayout from "./pages.astro";
 import { SEO } from "astro-seo";
 import { Picture } from "@astrojs/image/components";
 
-const { frontmatter: fm } = Astro.props;
+const { frontmatter: fm } = Astro.props as MDXLayoutProps<{
+  title: string;
+  date: string;
+  image?: string;
+  tags?: string[];
+}>;
 ---
 
 <PagesLayout title={fm.title}>
@@ -14,10 +20,10 @@ const { frontmatter: fm } = Astro.props;
         <Picture
           src={fm.image}
           alt={fm.title}
-          widths={[640]}
-          sizes="100vh"
-          aspectRatio={3 / 4}
-          formats={["avif", "webp"]}
+          widths={[1140, 960, 720, 540, 360]}
+          aspectRatio={3 / 2}
+          sizes="(min-width: 1200px) 1140px, (min-width: 992px) 960px, (min-width: 768px) 720px, (min-width: 576px) 540px, 100vw"
+          formats={["avif", "webp", "jpeg"]}
         />
       </p>
     )
