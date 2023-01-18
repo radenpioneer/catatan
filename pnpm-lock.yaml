@@ -13,6 +13,7 @@ specifiers:
   astro-critters: ^1.1.26
   astro-seo: 0.6.1
   daisyui: 2.46.1
+  flamethrower-router: 0.0.0-meme.12
   postcss: 8.4.21
   react: 18.2.0
   react-dom: 18.2.0
@@ -30,6 +31,7 @@ dependencies:
   astro-critters: 1.1.26
   astro-seo: 0.6.1
   daisyui: 2.46.1_gbtt6ss3tbiz4yjtvdr6fbrj44
+  flamethrower-router: 0.0.0-meme.12
   postcss: 8.4.21
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
@@ -2003,6 +2005,10 @@ packages:
     dependencies:
       micromatch: 4.0.5
       pkg-dir: 4.2.0
+    dev: false
+
+  /flamethrower-router/0.0.0-meme.12:
+    resolution: {integrity: sha512-PWcNrjzItwk61RTk/SbbKJNcAgl6qCXH8xkZjGjUGV/dgKAnURci+k+Yk8emubUQWTdAd1kSqujy0VRjoeEgxg==}
     dev: false
 
   /format/0.2.2:
