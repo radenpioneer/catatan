@@ -16,7 +16,7 @@ const { frontmatter: fm } = Astro.props as MDXLayoutProps<{
   <SEO title={fm.title} slot="head" />
   {
     fm.image && (
-      <p>
+      <p class="image">
         <Picture
           src={fm.image}
           alt={fm.title}
@@ -31,6 +31,31 @@ const { frontmatter: fm } = Astro.props as MDXLayoutProps<{
       </p>
     )
   }
+  <p class="date">
+    <time datetime={fm.date}
+      >{
+        new Date(fm.date).toLocaleDateString('id-ID', {
+          weekday: 'long',
+          year: 'numeric',
+          month: 'long',
+          day: 'numeric',
+        })
+      }</time
+    >
+  </p>
 
   <slot />
 </PagesLayout>
+
+<style lang="scss">
+  .date {
+    text-align: center;
+  }
+
+  @media (max-width: 576px) {
+    .image {
+      margin-left: -1rem;
+      margin-right: -1rem;
+    }
+  }
+</style>
