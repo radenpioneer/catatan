@@ -1,5 +1,6 @@
 ---
 import { Picture } from '@astrojs/image/components'
+import profile from '~/assets/img/profile.jpg'
 
 const NAV_MENU = [
   {
@@ -14,7 +15,7 @@ const NAV_MENU = [
     <li>
       <a href="/">
         <Picture
-          src="https://placekitten.com/360/360"
+          src={profile}
           alt="notes.radenpioneer.blog"
           widths={[130]}
           aspectRatio={1 / 1}
