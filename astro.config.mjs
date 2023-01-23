@@ -4,11 +4,11 @@ import image from '@astrojs/image'
 import mdx from '@astrojs/mdx'
 import critters from 'astro-critters'
 import compress from 'astro-compress'
+import sitemap from '@astrojs/sitemap'
 import Yaml from '@modyfi/vite-plugin-yaml'
 
-// https://astro.build/config
 export default defineConfig({
-  site: 'https://notes.radenpioneer.blog',
+  site: 'https://catatan.radenpioneer.blog',
   integrations: [
     react(),
     image({
@@ -16,7 +16,10 @@ export default defineConfig({
     }),
     mdx(),
     critters(),
-    compress({ img: false }),
+    compress({
+      img: false,
+    }),
+    sitemap(),
   ],
   vite: {
     plugins: [Yaml()],
