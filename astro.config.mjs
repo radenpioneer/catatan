@@ -15,6 +15,6 @@ export default defineConfig({
     }),
     mdx(),
     critters(),
-    compress(),
+    compress({ img: false }),
   ],
 })
