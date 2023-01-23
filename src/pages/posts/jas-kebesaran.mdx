@@ -4,7 +4,6 @@ title: Jas Kebesaran
 date: 2014-12-20
 tags:
   - archived
-draft: true
 ---
 
 Iseng-iseng kuketikkan beberapa nama, nama yang dulu kukenal akrab di pondok. Lalu kubaca profil mereka dan isi postingan mereka, tak lupa foto-foto kenangan mereka yang terunggah rapi di laman profil mereka. Nihil. Lalu dengan isengnya kembali jariku mengetikkan nama sebuah organisasi dakwah ekstrakampus yang terkenal dengan aksinya itu. Keluar sebuah nama grup. Kucari nama yang mungkin dulu aku kenal. Ujung jariku terus menggulir trackpad laptop dan nama-nama itu…. semuanya kukenal baru di universitas, dan satu kejutan: Ternyata adik kelasku di SD yang tampak dalam daftar anggota grup tersebut. Tapi teman-teman pondok tetap nihil.
@@ -17,6 +16,17 @@ Dan mereka inilah yang kupertanyakan. Mengapa dari sekian ratus orang teman sean
 
 Ingat dulu ada ustadz pernah bilang: “Jas pondokmu itu terlalu besar buat kalian.”
 
-![Ilustrasi jas](https://source.unsplash.com/SpqyMw0lrhw/1600x1000)
+import { Picture } from '@astrojs/image/components'
+
+<p>
+  <Picture
+    src="https://source.unsplash.com/SpqyMw0lrhw/1600x1000"
+    alt="Ilustrasi jas"
+    widths={[1140, 960, 720, 540, 360]}
+    aspectRatio={16 / 10}
+    sizes="(min-width: 1200px) 1140px, (min-width: 992px) 960px, (min-width: 768px) 720px, (min-width: 576px) 540px, 100vw"
+    formats={['avif', 'webp', 'jpeg']}
+  />
+</p>
 
 _Direstorasi dari blog lama, yang linknya ada di [sini](https://web.archive.org/web/20150404200244/http://radenpioneer.my.id/blog/2014/12/20/dan-ternyata-aku-sendirian/)._
