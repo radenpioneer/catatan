@@ -4,6 +4,7 @@ import image from '@astrojs/image'
 import mdx from '@astrojs/mdx'
 import critters from 'astro-critters'
 import compress from 'astro-compress'
+import Yaml from '@modyfi/vite-plugin-yaml'
 
 // https://astro.build/config
 export default defineConfig({
@@ -17,4 +18,7 @@ export default defineConfig({
     critters(),
     compress({ img: false }),
   ],
+  vite: {
+    plugins: [Yaml()],
+  },
 })

@@ -3,9 +3,11 @@ import type { MDXLayoutProps } from 'astro'
 import PagesLayout from './pages.astro'
 import { SEO } from 'astro-seo'
 import { Picture } from '@astrojs/image/components'
+import site from '~/site.yml'
 
 const { frontmatter: fm } = Astro.props as MDXLayoutProps<{
   title: string
+  subtitle?: string
   date: string
   image?: string
   tags?: string[]
@@ -13,7 +15,11 @@ const { frontmatter: fm } = Astro.props as MDXLayoutProps<{
 ---
 
 <PagesLayout title={fm.title}>
-  <SEO title={fm.title} slot="head" />
+  <SEO
+    title={fm.title}
+    description={fm.subtitle || site.description}
+    slot="head"
+  />
   {
     fm.image && (
       <p class="image">

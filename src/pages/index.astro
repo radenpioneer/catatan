@@ -1,11 +1,14 @@
 ---
 import Layout from '~/layouts/layout.astro'
+import { SEO } from 'astro-seo'
 import { Picture } from '@astrojs/image/components'
+import site from '~/site.yml'
 
 const posts = await Astro.glob('./posts/*.mdx')
 ---
 
 <Layout>
+  <SEO title={site.title} description={site.description} slot="head" />
   <section>
     {
       posts

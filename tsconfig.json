@@ -1,13 +1,15 @@
 {
   "extends": "astro/tsconfigs/strictest",
   "compilerOptions": {
+    "types": ["@modyfi/vite-plugin-yaml/modules"],
+
+    "exactOptionalPropertyTypes": false,
+    "jsx": "react-jsx",
+    "jsxImportSource": "react",
     "baseUrl": ".",
     "paths": {
       "~/layouts/*": ["./src/components/layouts/*"],
       "~/*": ["./src/*"]
-    },
-    "exactOptionalPropertyTypes": false,
-    "jsx": "react-jsx",
-    "jsxImportSource": "react"
+    }
   }
 }

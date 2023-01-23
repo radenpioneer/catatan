@@ -4,6 +4,7 @@ specifiers:
   '@astrojs/image': 0.12.1
   '@astrojs/mdx': 0.14.0
   '@astrojs/react': 1.2.2
+  '@modyfi/vite-plugin-yaml': ^1.0.4
   '@picocss/pico': 1.5.6
   '@types/node': 18.11.18
   '@types/react': 18.0.27
@@ -24,6 +25,7 @@ dependencies:
   '@astrojs/image': 0.12.1_sharp@0.31.3
   '@astrojs/mdx': 0.14.0_rollup@2.79.1
   '@astrojs/react': 1.2.2_fxtgt6bjwd6p4cwoordejim2zi
+  '@modyfi/vite-plugin-yaml': 1.0.4_rollup@2.79.1+vite@3.2.5
   '@picocss/pico': 1.5.6
   astro: 1.9.2_ovmyjmuuyckt3r3gpaexj2onji
   astro-compress: 1.1.28
@@ -568,6 +570,19 @@ packages:
       - supports-color
     dev: false
 
+  /@modyfi/vite-plugin-yaml/1.0.4_rollup@2.79.1+vite@3.2.5:
+    resolution: {integrity: sha512-qkT0KiR3AQQRfUvDzLv4+1rYAzXj+QmGhAbyUd0Ordf9xynK76i758lk5GiEfxuQxbvdqDaJ9oXkH/KacbSjQQ==}
+    peerDependencies:
+      vite: ^2.6.0 || ^3.0.0 || ^4.0.0
+    dependencies:
+      '@rollup/pluginutils': 5.0.2_rollup@2.79.1
+      js-yaml: 4.1.0
+      tosource: 2.0.0-alpha.3
+      vite: 3.2.5_ovmyjmuuyckt3r3gpaexj2onji
+    transitivePeerDependencies:
+      - rollup
+    dev: false
+
   /@nodelib/fs.scandir/2.1.5:
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
     engines: {node: '>= 8'}
@@ -868,6 +883,10 @@ packages:
     resolution: {integrity: sha512-o5Roy6tNG4SL/FOkCAN6RzjiakZS25RLYFrcMttJqbdd8BWrnA+fGz57iN5Pb06pvBGvl5gQ0B48dJlslXvoTg==}
     dependencies:
       sprintf-js: 1.0.3
+    dev: false
+
+  /argparse/2.0.1:
+    resolution: {integrity: sha512-8+9WqebbFzpX9OR+Wa6O29asIogeRMzcGtAINdpMHHyAg10f05aSFVBbcEqGf/PXw1EjAZ+q2/bEBg3DvurK3Q==}
     dev: false
 
   /array-iterate/2.0.1:
@@ -2363,6 +2382,13 @@ packages:
     dependencies:
       argparse: 1.0.10
       esprima: 4.0.1
+    dev: false
+
+  /js-yaml/4.1.0:
+    resolution: {integrity: sha512-wpxZs9NoxZaJESJGIZTyDEaYpl0FKSA+FB9aJiyemKhMwkxQg63h4T1KJgUGHpTqPDNRcmmYLugrRjJlBtWvRA==}
+    hasBin: true
+    dependencies:
+      argparse: 2.0.1
     dev: false
 
   /jsesc/2.5.2:
@@ -4058,6 +4084,11 @@ packages:
     engines: {node: '>=8.0'}
     dependencies:
       is-number: 7.0.0
+    dev: false
+
+  /tosource/2.0.0-alpha.3:
+    resolution: {integrity: sha512-KAB2lrSS48y91MzFPFuDg4hLbvDiyTjOVgaK7Erw+5AmZXNq4sFRVn8r6yxSLuNs15PaokrDRpS61ERY9uZOug==}
+    engines: {node: '>=10'}
     dev: false
 
   /totalist/3.0.0:
