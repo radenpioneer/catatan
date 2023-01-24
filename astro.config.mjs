@@ -6,20 +6,23 @@ import critters from 'astro-critters'
 import compress from 'astro-compress'
 import sitemap from '@astrojs/sitemap'
 import Yaml from '@modyfi/vite-plugin-yaml'
+import oembed from 'remark-oembed'
 
 export default defineConfig({
   site: 'https://catatan.radenpioneer.blog',
   integrations: [
     react(),
+    mdx({
+      remarkPlugins: [[oembed, { syncWidget: true }]],
+    }),
     image({
       serviceEntryPoint: '@astrojs/image/sharp',
     }),
-    mdx(),
-    critters(),
+    sitemap(),
     compress({
       img: false,
     }),
-    sitemap(),
+    critters(),
   ],
   vite: {
     plugins: [Yaml()],
