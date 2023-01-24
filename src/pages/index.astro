@@ -18,7 +18,7 @@ const posts = await Astro.glob('./posts/*.mdx')
             new Date(a.frontmatter.date).getTime()
         )
         .map((post, i) => (
-          <article>
+          <article class={!post.frontmatter.image ? 'a-no-image' : ''}>
             {post.frontmatter.image && (
               <a href={post.url}>
                 <Picture
@@ -64,19 +64,48 @@ const posts = await Astro.glob('./posts/*.mdx')
     min-height: 180px;
   }
 
+  .a-no-image {
+    border-width: 1px;
+    border-color: var(--primary);
+    border-style: solid;
+    border-radius: 0.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+
+    .date {
+      margin-top: -1.25rem;
+      time {
+        background-color: var(--background-color);
+        padding-left: 5px;
+        padding-right: 5px;
+      }
+    }
+  }
+
   h3 {
-    --typography-spacing-vertical: 0.5rem;
+    --typography-spacing-vertical: 0;
     margin-top: 0.5rem;
+
+    a {
+      color: inherit;
+
+      &:hover {
+        color: var(--primary);
+      }
+    }
   }
 
   .date {
     margin-top: 0.75rem;
     margin-bottom: 0;
+    color: var(--primary);
   }
 
   .t-no-image {
-    font-size: 3rem;
-    line-height: 1;
+    --font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 
   @media (min-width: 576px) {
@@ -85,7 +114,8 @@ const posts = await Astro.glob('./posts/*.mdx')
     }
 
     h3 {
-      --font-size: 1rem;
+      --font-size: 1.25rem;
+      line-height: 1.75rem;
     }
 
     .date {
