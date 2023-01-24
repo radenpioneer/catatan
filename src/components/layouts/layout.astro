@@ -4,6 +4,9 @@ import Icons from '../site/icons.astro'
 import Nav from '../site/nav.astro'
 
 import '~/styles/global.scss'
+import '@fontsource/inter'
+import '@fontsource/inter/700.css'
+import '@fontsource/inter/800.css'
 ---
 
 <BaseLayout>
@@ -20,3 +23,9 @@ import '~/styles/global.scss'
     import '~/assets/js/router'
   </script>
 </BaseLayout>
+
+<style lang="scss" is:global>
+  :root {
+    --font-family: 'Inter', system-ui, sans-serif;
+  }
+</style>
