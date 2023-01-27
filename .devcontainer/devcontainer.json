@@ -1,5 +1,6 @@
 {
   "build": {
     "dockerfile": "../.gitpod.Dockerfile"
-  }
+  },
+  "runArgs": ["--env-file", ".devcontainer/.env"]
 }

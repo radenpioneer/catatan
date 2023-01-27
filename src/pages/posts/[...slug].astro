@@ -1,46 +1,53 @@
 ---
-import type { MDXLayoutProps } from 'astro'
-import PagesLayout from './pages.astro'
+import PagesLayout from '~/layouts/pages.astro'
 import { SEO } from 'astro-seo'
 import { Picture } from '@astrojs/image/components'
 import site from '~/site.yml'
 
-const { frontmatter: fm } = Astro.props as MDXLayoutProps<{
-  title: string
-  subtitle?: string
-  date: string
-  image?: string
-  tags?: string[]
-}>
+import { getCollection } from 'astro:content'
+
+export const getStaticPaths = async () => {
+  const posts = await getCollection('posts')
+  return posts.map((post) => ({
+    params: {
+      slug: `${post.data.date.getFullYear()}/${post.slug}`,
+    },
+    props: { post },
+  }))
+}
+
+const { post } = Astro.props
+const { Content } = await post.render()
 ---
 
-<PagesLayout title={fm.title}>
+<PagesLayout title={post.data.title}>
   <SEO
-    title={fm.title}
-    description={fm.subtitle || site.description}
+    title={post.data.title}
+    description={post.data.subtitle || site.description}
     slot="head"
   />
   {
-    fm.image && (
+    post.data.image && (
       <p class="image">
         <Picture
-          src={fm.image}
-          alt={fm.title}
+          src={post.data.image}
+          alt={post.data.title}
           width={1140}
           height={760}
           widths={[1140, 960, 720, 540, 360]}
           aspectRatio={3 / 2}
           sizes="(min-width: 1200px) 1140px, (min-width: 992px) 960px, (min-width: 768px) 720px, (min-width: 576px) 540px, 100vw"
           formats={['avif', 'webp', 'jpeg']}
+          background="rgba(0,0,0,0.0)"
           loading={'eager'}
         />
       </p>
     )
   }
   <p class="date">
-    <time datetime={fm.date}
+    <time datetime={post.data.date}
       >{
-        new Date(fm.date).toLocaleDateString('id-ID', {
+        new Date(post.data.date).toLocaleDateString('id-ID', {
           weekday: 'long',
           year: 'numeric',
           month: 'long',
@@ -50,7 +57,7 @@ const { frontmatter: fm } = Astro.props as MDXLayoutProps<{
     >
   </p>
 
-  <slot />
+  <Content />
 </PagesLayout>
 
 <style lang="scss">

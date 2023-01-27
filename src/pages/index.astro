@@ -3,8 +3,9 @@ import Layout from '~/layouts/layout.astro'
 import { SEO } from 'astro-seo'
 import { Picture } from '@astrojs/image/components'
 import site from '~/site.yml'
+import { getCollection } from 'astro:content'
 
-const posts = await Astro.glob('./posts/*.mdx')
+const posts = await getCollection('posts')
 ---
 
 <Layout>
@@ -12,31 +13,28 @@ const posts = await Astro.glob('./posts/*.mdx')
   <section>
     {
       posts
-        .sort(
-          (a, b) =>
-            new Date(b.frontmatter.date).getTime() -
-            new Date(a.frontmatter.date).getTime()
-        )
+        .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
         .map((post, i) => (
-          <article class={!post.frontmatter.image ? 'a-no-image' : ''}>
-            {post.frontmatter.image && (
-              <a href={post.url}>
+          <article class={!post.data.image ? 'a-no-image' : ''}>
+            {post.data.image && (
+              <a href={`/posts/${post.data.date.getFullYear()}/${post.slug}`}>
                 <Picture
-                  src={post.frontmatter.image}
-                  alt={post.frontmatter.title}
+                  src={post.data.image}
+                  alt={post.data.title}
                   width={540}
                   height={304}
                   widths={[540, 360]}
                   aspectRatio={16 / 9}
                   sizes="(min-width: 576px) 540px, 100vw"
+                  background="rgba(0,0,0,0.0)"
                   formats={['avif', 'webp', 'jpeg']}
                   loading={i < 3 ? 'eager' : 'lazy'}
                 />
               </a>
             )}
             <p class="date">
-              <time datetime={post.frontmatter.date}>
-                {new Date(post.frontmatter.date).toLocaleDateString('id-ID', {
+              <time datetime={post.data.date.toISOString()}>
+                {post.data.date.toLocaleDateString('id-ID', {
                   weekday: 'long',
                   year: 'numeric',
                   month: 'long',
@@ -44,8 +42,10 @@ const posts = await Astro.glob('./posts/*.mdx')
                 })}
               </time>
             </p>
-            <h3 class={!post.frontmatter.image ? 't-no-image' : ''}>
-              <a href={post.url}>{post.frontmatter.title}</a>
+            <h3 class={!post.data.image ? 't-no-image' : ''}>
+              <a href={`/posts/${post.data.date.getFullYear()}/${post.slug}`}>
+                {post.data.title}
+              </a>
             </h3>
           </article>
         ))
