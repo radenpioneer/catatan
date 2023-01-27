@@ -22,3 +22,6 @@ dist
 
 #debug.log
 debug.log
+
+# pnpm
+.pnpm-store
