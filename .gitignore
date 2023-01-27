@@ -26,4 +26,8 @@ debug.log
 # pnpm
 .pnpm-store
 
+# astro 2.0 types
+.astro
+
+# env file
 **/.env
