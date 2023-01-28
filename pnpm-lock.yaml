@@ -7,7 +7,7 @@ specifiers:
   '@astrojs/sitemap': 1.0.0
   '@fontsource/inter': 4.5.15
   '@modyfi/vite-plugin-yaml': 1.0.4
-  '@picocss/pico': 1.5.6
+  '@picocss/pico': 1.5.7
   '@types/node': 18.11.18
   '@types/react': 18.0.27
   '@types/react-dom': 18.0.10
@@ -31,7 +31,7 @@ dependencies:
   '@astrojs/sitemap': 1.0.0
   '@fontsource/inter': 4.5.15
   '@modyfi/vite-plugin-yaml': 1.0.4_rollup@3.11.0+vite@4.0.4
-  '@picocss/pico': 1.5.6
+  '@picocss/pico': 1.5.7
   astro: 2.0.2_ovmyjmuuyckt3r3gpaexj2onji
   astro-compress: 1.1.28
   astro-critters: 1.1.26
@@ -784,8 +784,8 @@ packages:
       fastq: 1.15.0
     dev: false
 
-  /@picocss/pico/1.5.6:
-    resolution: {integrity: sha512-9R+OdtMuHijKa7AQKBrng/1Q/Cd3BnEigYJXmOxI10Eka2qGGDa4b0hua8UeYu01BTtAiO70K7CQuHffU4YXGA==}
+  /@picocss/pico/1.5.7:
+    resolution: {integrity: sha512-RygdXNlSXieAs9jMw/AeqA1ki1kldgEYbRn8BnYZIPfRTM5NWZ4uVzMK6uMPhYlRjoT5wD/OplZvIefnCqyDCQ==}
     dev: false
 
   /@pkgr/utils/2.3.1:
