@@ -22,29 +22,29 @@
     "start": "pnpx npm-run-all -s build preview"
   },
   "dependencies": {
-    "@astrojs/image": "0.13.0",
-    "@astrojs/mdx": "0.15.1",
-    "@astrojs/react": "2.0.1",
-    "@astrojs/sitemap": "1.0.0",
+    "@astrojs/image": "0.14.0",
+    "@astrojs/mdx": "0.16.0",
+    "@astrojs/react": "2.0.2",
+    "@astrojs/sitemap": "1.0.1",
     "@fontsource/inter": "4.5.15",
     "@modyfi/vite-plugin-yaml": "1.0.4",
     "@picocss/pico": "1.5.7",
-    "astro": "2.0.2",
-    "astro-compress": "1.1.28",
-    "astro-critters": "1.1.26",
+    "astro": "2.0.6",
+    "astro-compress": "1.1.29",
+    "astro-critters": "1.1.28",
     "astro-seo": "0.7.0",
     "flamethrower-router": "0.0.0-meme.12",
     "postcss": "8.4.21",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "remark-oembed": "1.2.2",
-    "sass": "1.57.1",
+    "sass": "1.58.0",
     "sharp": "0.31.3"
   },
   "devDependencies": {
     "@types/node": "18.11.18",
     "@types/react": "18.0.27",
     "@types/react-dom": "18.0.10",
-    "typescript": "4.9.4"
+    "typescript": "4.9.5"
   }
 }
